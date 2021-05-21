@@ -6,7 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body> <main>
     
+    <h1 id="title">Your ideal program</h1>
+
+<p id="description">Fill this form to find out your ideal program to get in shape for this summer and keep long-lasting results!</p>
+
+<form id="survey-form">
+
+    <label id="name-label">Name (or nickname ;) )</label> <br>
+    <input id="name" type="text" required placeholder="Enter your name"> <br><br>
+    
+    <label id="email-label">E-mail</label><br>
+    <input id="email" type="email" required placeholder="Enter your e-mail"><br><br>
+
+    <label id="number-label">Age (optional)</label><br>
+    <input id="number" type="number" min="1" max="150" placeholder="Enter your age"><br><br>
+
+    <label id="dropdown-label">What is your main goal:</label><br>
+    <select id="dropdown">
+        <option value="lose weight">Lose weight</option>
+        <option value="gain muscle mass">Gain muscle mass</option>
+        <option value="Become fit and healthy">Become fit and healthy</option>
+
+    </select><br><br>
+
+    <label for="indoor"> Would you rather exercise indoor or outdoor ? <br>
+        <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor
+        <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor
+        <input id="both" value="both" type="radio" name="indoor-outdoor">Both
+    </label><br><br>
+
+    <label>Would you like to subscribe to our Newsletter to receive a weekly meal plan to help you reach your goals?</label><br>
+    <label for="yes">
+        <input id="yes" value="yes" type="checkbox"  name="newsletter" checked>Yes, please!
+    </label><br>
+    <label for="no">
+        <input id="no" value="no" type="checkbox"  name="newsletter">No, thank you.
+    </label><br><br>
+
+    <label>Upload your before picture(s) here to keep track of your results!</label><br>
+    <input id="beforepic" type="file" required placeholder="Upload your before picture(s)" accept="image/png,image/jpeg" multiple=""><br><br>
+
+    <label for="textarea">Studies show that one is more likely to stay motivated when they are reminded of the reason(s) WHY they chose to start a new habit. Now's your chance, feel free to describe yourself and the reasons you are motivated to try this challenge! :)</label><br>
+    <textarea id="textarea" name="textarea" rows="10" cols="50" required placeholder="Describe yourself and your motivations here"></textarea><br><br>
+
+    <button id="submit" type="submit">Click here to submit your answers</button>
+</form>
+
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
